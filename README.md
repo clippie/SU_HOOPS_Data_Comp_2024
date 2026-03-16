@@ -12,28 +12,13 @@ Live Shiny App: [cadenlippie.shinyapps.io/SUBBALL_Data_Comp_2024](https://cadenl
 
 **Need 3 Points — Syracuse vs. opponent (Chris Bell recommended)**
 
-![3-point scenario](screenshots/screenshot_threes.png)
+<img width="950" height="400" alt="3pt Scenario" src="https://github.com/user-attachments/assets/f0473340-b6b3-46f7-9d59-4061cf2454e0" />
+
 
 **Need 2 Points — Syracuse vs. opponent (Judah Mintz recommended)**
 
-![2-point scenario](screenshots/screenshot_twos.png)
+<img width="950" height="400" alt="2pt Scenario" src="https://github.com/user-attachments/assets/baf5347b-c4da-489e-b718-3c835399e4a7" />
 
----
-
-## 📁 Project Structure
-
-```
-├── analysis.R                          # Main R analysis script (data processing, modeling, clustering)
-├── app.R                               # Shiny app (UI + server)
-├── SUBBALL_Data_Comp_2024_final_data.csv  # Final output data used by the app
-├── PBP2324.csv                         # Play-by-play data (2023-24 CBB season)
-├── www/
-│   ├── Iso.png                         # 5-Out Isolation play diagram
-│   ├── Flare.png                       # Flare Screen play diagram
-│   ├── Spain.png                       # Spain Pick and Roll play diagram
-│   └── UCLA.png                        # UCLA play diagram
-└── README.md
-```
 
 ---
 
@@ -120,18 +105,6 @@ Each player archetype is matched to a play design best suited to create their op
 
 ---
 
-## 🖥️ Shiny App
-
-The interactive Shiny app allows users to:
-1. Select whether they **need 2 or 3 points**
-2. Select a **team**
-3. See the **recommended player** (with headshot and archetype label)
-4. See the **recommended play diagram** with a description of the player's role
-
-Built with `shiny` and `shinydashboard` in Syracuse orange and navy.
-
----
-
 ## 📦 Dependencies
 
 ```r
@@ -146,19 +119,10 @@ library(DT)
 
 ---
 
-## 🚀 Running Locally
+## 🖥️ Shiny App
 
-```r
-# Clone the repo, then in R:
-shiny::runApp("app.R")
-```
-
-Make sure `SUBBALL_Data_Comp_2024_final_data.csv` and the play diagram PNGs are in the correct paths (see project structure above).
-
-To re-run the full analysis from raw data, run `analysis.R` with `PBP2324.csv` in your working directory.
-
----
-
-## 📬 Contact
-
-Questions or feedback? Reach out to **Caden Lippie** or **Ethan Radecki**.
+The interactive Shiny app allows users to:
+1. Select whether they **need 2 or 3 points**
+2. Select a **team**
+3. See the **recommended player** (with archetype label)
+4. See the **recommended play diagram** with a description of the player's role
